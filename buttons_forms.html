@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Example</title>
+</head>
+<body>
+
+<form action="/submit" method="post">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" placeholder="Enter your username">
+  
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" placeholder="Enter your password">
+  
+  <label for="favcolor">Favorite Color:</label>
+  <input type="color" id="favcolor" name="favcolor">
+  
+  <label for="resume">Upload Resume:</label>
+  <input type="file" id="resume" name="resume">
+  
+  <button type="submit">Submit</button>
+  <button type="reset">Reset</button>
+  <button type="button" onclick="alert('Button clicked!')">Just a Button</button>
+</form>
+
+</body>
+</html>

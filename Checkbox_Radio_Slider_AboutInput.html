@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elements Example</title>
+</head>
+<body>
+    <!-- Label for the range input -->
+    <label for="volume">Volume:</label>
+    <!-- Range input (slider) with id matching the label's for attribute -->
+    <input type="range" id="volume" name="volume" min="0" max="100">
+    <!-- The name attribute tells the server what to do with this input -->
+
+    <br><br>
+
+    <!-- Label for a checkbox input -->
+    <label for="subscribe">Subscribe to newsletter:</label>
+    <!-- Checkbox input with id matching the label's for attribute -->
+    <input type="checkbox" id="subscribe" name="subscribe">
+
+    <br><br>
+
+    <!-- Label for radio buttons -->
+    <label>Choose a color:</label>
+    <br>
+    <!-- Radio button with id and name attributes -->
+    <input type="radio" id="colorRed" name="color" value="red">
+    <label for="colorRed">Red</label>
+    <br>
+    <input type="radio" id="colorBlue" name="color" value="blue">
+    <label for="colorBlue">Blue</label>
+
+    <br><br>
+
+    <!-- Label for a select dropdown -->
+    <label for="cars">Choose a car:</label>
+    <!-- Select dropdown with name attribute -->
+    <select id="cars" name="car">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+    </select>
+</body>
+</html>
