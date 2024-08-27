@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+</head>
+<body>
+    <!--
+    OVERVIEW:
+    This HTML document demonstrates several key HTML concepts:
+
+    1. AUDIO and VIDEO elements: Embedding audio and video files with controls.
+    2. IMAGES and IMAGE MAPS: Using images with clickable areas to link to other pages.
+    3. LINKS: Creating hyperlinks to navigate within the page and to external websites.
+    4. ORDERED LISTS: Displaying lists with Roman numerals and custom starting points.
+    5. TEXT FORMATTING: Using various tags to format text.
+    6. HTML STRUCTURE: Properly nesting and indenting HTML elements.
+    -->
+
+    <!-- CONCEPT 1: AUDIO -->
+    <!-- The <audio> element is used to embed audio files. It includes multiple <source> tags for different audio formats. -->
+    <audio controls>
+        <source src="horse.ogv" type="audio/ogv"> <!-- Ogg Vorbis audio format -->
+        <source src="horse.mp3" type="audio/mpeg"> <!-- MP3 audio format -->
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- CONCEPT 2: VIDEO -->
+    <!-- The <video> element is used to embed video files. It includes controls for playback and attributes for autoplay, muted, and loop. -->
+    <video width="320" height="240" controls autoplay muted loop>
+        <source src="movie.mp4" type="video/mp4"> <!-- MP4 video format -->
+        <source src="movie.ogg" type="video/ogg"> <!-- Ogg video format -->
+        Your browser does not support the video tag.
+    </video>
+
+    <br>
+
+    <!-- CONCEPT 3: IMAGE MAP -->
+    <!-- The <img> element displays an image. The usemap attribute links it to a <map> element, which defines clickable areas. -->
+    <img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+    <map name="workmap">
+        <!-- CONCEPT 3.1: AREA -->
+        <!-- The <area> elements define clickable regions within the image map. -->
+        <area shape="rect" coords="74,64,170,350" href="computer.htm" alt="Computer"> <!-- Rectangular clickable area -->
+        <area shape="rect" coords="290,172,333,250" href="phone.htm" alt="Phone"> <!-- Rectangular clickable area -->
+        <area shape="circle" coords="337,300,44" href="coffee.htm" alt="Coffee"> <!-- Circular clickable area -->
+    </map>
+
+    <!-- CONCEPT 4: LINK WITH IMAGE -->
+    <!-- The <a> element creates a hyperlink, which can also be used with images to link to other pages. -->
+    <a href="P.html">
+        <img src="img.png" alt="Memory concept is here" height="230">
+    </a>
+
+    <br><br>
+
+    <!-- CONCEPT 5: HYPERLINKS -->
+    <!-- Navigation links to different sections of the page or to external sites. -->
+    <a href="#lastParagraph">Move to last paragraph</a>
+    <br>
+    <a href="P.html">Another Page</a>
+    <br>
+    <a href="http://google.com" target="_blank">Search on Google</a> <!-- Opens Google in a new tab -->
+    
+    <!-- CONCEPT 6: ORDERED LIST -->
+    <!-- The <ol> element creates an ordered list with specified starting points and types. -->
+    <ol type="I" start="3">
+        <li>Nokia</li>
+        <li>Samsung</li>
+        <li value="1">iPhone</li> <!-- Custom starting value for list items -->
+        <li>Nokia</li>
+        <li>Samsung</li>
+        <li>iPhone</li>
+    </ol>
+
+    <!-- CONCEPT 7: HEADINGS -->
+    <!-- Various levels of headings for section titles and organization. -->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+
+    <!-- CONCEPT 8: TEXT FORMATTING -->
+    <!-- Formatting text with tags like <b>, <i>, <u>, <strike>, and <ins>. -->
+    <p>
+        This is para1
+        <b>This is para1</b>
+        <u>This is para1</u>
+        <i><b>This is para1</b></i>
+        <strike>50</strike> <ins>30</ins>
+    </p>
+
+    <!-- CONCEPT 9: TEXT WITH ENTITY CODES -->
+    <!-- Demonstrates the use of non-breaking spaces and special characters. -->
+    <p>
+        Because &nbsp; &nbsp;&nbsp; &forall; &copy; both the heading and paragraph are nested within the <body> element, they are visible on the web page.
+        When an element is placed inside of another element, also known as nested, it is a good idea to indent that element to keep the document structure well organized and legible. 
+        In the previous code, <mark>both</mark> the <head> and <body> elements were nested and indented inside the <html> element. The pattern of indenting for elements continues as new elements are added inside the <head> and <body> elements.
+    </p>
+
+    <!-- CONCEPT 10: LAST PARAGRAPH -->
+    <!-- Demonstrates the use of an ID attribute for linking within the page. -->
+    <p id="lastParagraph">
+        Because &nbsp; &nbsp;&nbsp; &forall; &copy; both the heading and paragraph are nested within the <body> element, they are visible on the web page.
+        When an element is placed inside of another element, also known as nested, it is a good idea to indent that element to keep the document structure well organized and legible. 
+        In the previous code, <mark>both</mark> the <head> and <body> elements were nested and indented inside the <html> element. The pattern of indenting for elements continues as new elements are added inside the <head> and <body> elements.
+    </p>
+
+</body>
+</html>
