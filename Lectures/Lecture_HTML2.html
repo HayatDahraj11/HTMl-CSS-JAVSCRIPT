@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My HTML Page</title>
+
+    <!--
+    OVERVIEW:
+    This HTML document covers several key HTML concepts and demonstrates various elements:
+
+    1. AUDIO and VIDEO elements: Embedding audio and video files with controls.
+    2. IMAGES and IMAGE MAPS: Displaying images with clickable areas.
+    3. LINKS: Creating hyperlinks for navigation.
+    4. ORDERED LISTS: Using lists with custom starting points.
+    5. TEXT FORMATTING: Formatting text with different HTML tags.
+    6. SMOOTH SCROLLING: Applying smooth scrolling behavior using CSS.
+    -->
+
+    <!-- CONCEPT 1: SMOOTH SCROLLING -->
+    <!-- The following CSS rule enables smooth scrolling when navigating through the page. -->
+    <style>
+        html {
+            scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- CONCEPT 2: AUDIO -->
+    <!-- The <audio> element is used to embed audio files with playback controls. -->
+    <audio controls>
+        <source src="horse.ogv" type="audio/ogv"> <!-- Ogg Vorbis audio format -->
+        <source src="horse.mp3" type="audio/mpeg"> <!-- MP3 audio format -->
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- CONCEPT 3: VIDEO -->
+    <!-- The <video> element is used to embed video files with playback controls. -->
+    <video width="320" height="240" autoplay muted>
+        <source src="movie.mp4" type="video/mp4"> <!-- MP4 video format -->
+        <source src="movie.ogg" type="video/ogg"> <!-- Ogg video format -->
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- CONCEPT 4: IMAGE -->
+    <!-- The <img> element displays an image. The same image is used within a hyperlink. -->
+    <img src="img.png" alt="Memory Concept is here" height="250">
+    <a href="http://google.com">
+        <img src="img.png" alt="Memory Concept is here" height="250">
+    </a>
+
+    <br>
+
+    <!-- CONCEPT 5: IMAGE MAP -->
+    <!-- The <img> element with usemap attribute links to a <map> element defining clickable areas. -->
+    <img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+    <map name="workmap">
+        <!-- CONCEPT 5.1: AREA -->
+        <!-- The <area> elements define clickable regions within the image map. -->
+        <area shape="rect" coords="54,64,290,350" href="P.html" alt="Page Link"> <!-- Rectangular clickable area -->
+        <area shape="rect" coords="290,172,333,250" href="phone.htm" alt="Phone Link"> <!-- Rectangular clickable area -->
+        <area shape="circle" coords="337,300,44" href="coffee.htm" alt="Coffee Link"> <!-- Circular clickable area -->
+    </map>
+
+    <br>
+
+    <!-- CONCEPT 6: HYPERLINKS -->
+    <!-- The <a> element creates hyperlinks for navigation. -->
+    <a href="P.html">Page 3</a>
+    <br>
+    <a href="P.html">Page 3</a>
+    <br>
+    <a href="#lastP">Jump to last paragraph</a>
+
+    <br>
+
+    <!-- CONCEPT 7: ORDERED LIST -->
+    <!-- The <ol> element creates an ordered list with custom starting points. -->
+    <ol type="1" start="13">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li value="1">Item 1 (Reset)</li> <!-- Custom starting value for this list item -->
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <!-- CONCEPT 8: HEADINGS -->
+    <!-- Various levels of headings for structuring content. -->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+
+    <!-- CONCEPT 9: TEXT FORMATTING -->
+    <!-- Demonstrates text formatting with tags like <b>, <u>, <strike>, <ins>, <i>, <mark>, and <span>. -->
+    <p>
+        Because &forall; &copy; <b>both</b> <u>the</u>
+        <strike>50</strike><ins>30</ins>
+        <i>heading</i> and paragraph &nbsp; are <mark>nested</mark> within the <body> element, they are visible on the web page.
+        When an element is placed inside of another element, also known as nested, it is a good idea to indent that element to keep the document structure well organized and legible.
+        <span>In the previous code,</span> both the <head> and <body> elements were nested and indented inside the <html> element. The pattern of indenting for elements continues as new elements are added inside the <head> and <body> elements.
+    </p>
+
+    <!-- REPEATED PARAGRAPHS FOR DEMONSTRATION -->
+    <!-- These paragraphs demonstrate consistent formatting and nesting. -->
+    <p>
+        Because &forall; &copy; <b>both</b> <u>the</u>
+        <strike>50</strike><ins>30</ins>
+        <i>heading</i> and paragraph &nbsp; are <mark>nested</mark> within the <body> element, they are visible on the web page.
+        When an element is placed inside of another element, also known as nested, it is a good idea to indent that element to keep the document structure well organized and legible.
+        <span>In the previous code,</span> both the <head> and <body> elements were nested and indented inside the <html> element. The pattern of indenting for elements continues as new elements are added inside the <head> and <body> elements.
+    </p>
+    <p>
+        Because &forall; &copy; <b>both</b> <u>the</u>
+        <strike>50</strike><ins>30</ins>
+        <i>heading</i> and paragraph &nbsp; are <mark>nested</mark> within the <body> element, they are visible on the web page.
+        When an element is placed inside of another element, also known as nested, it is a good idea to indent that element to keep the document structure well organized and legible.
+        <span>In the previous code,</span> both the <head> and <body> elements were nested and indented inside the <html> element. The pattern of indenting for elements continues as new elements are added inside the <head> and <body> elements.
+    </p>
+    <p>
+        Because &forall; &copy; <b>both</b> <u>the</u>
+        <strike>50</strike><ins>30</ins>
+        <i>heading</i> and paragraph &nbsp; are <mark>nested</mark> within the <body> element, they are visible on the web page.
+        When an element is placed inside of another element, also known as nested, it is a good idea to indent that element to keep the document structure well organized and legible.
+        <span>In the previous code,</span> both the <head> and <body> elements were nested and indented inside the <html> element. The pattern of indenting for elements continues as new elements are added inside the <head> and <body> elements.
+    </p>
+
+    <!-- CONCEPT 10: LAST PARAGRAPH -->
+    <!-- Demonstrates the use of an ID attribute for internal page navigation. -->
+    <p id="lastP">
+        Because &forall; &copy; <b>both</b> <u>the</u>
+        <strike>50</strike><ins>30</ins>
+        <i>heading</i> and paragraph &nbsp; are <mark>nested</mark> within the <body> element, they are visible on the web page.
+        When an element is placed inside of another element, also known as nested, it is a good idea to indent that element to keep the document structure well organized and legible.
+        <span>In the previous code,</span> both the <head> and <body> elements were nested and indented inside the <html> element. The pattern of indenting for elements continues as new elements are added inside the <head> and <body> elements.
+    </p>
+
+</body>
+</html>
