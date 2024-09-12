@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- RT (Responsive Technique): The meta viewport tag ensures proper scaling of the website on mobile devices. 
+       How it works: This tells the browser how to control the page's dimensions and scaling on different screen sizes. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Design Example</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- RT: Responsive layout with grid columns
+       How it works: Header remains full width by using 100% width. -->
+  <div class="header">
+    <h1>Responsive Design Example</h1>
+  </div>
+
+  <!-- RT: Creating a grid layout using percentages for the widths of columns.
+       How it works: Column sizes are defined in the CSS to take up percentages of the screen width. -->
+  <div class="row">
+    <!-- RT: Responsive column (25% of width)
+         How it works: This is a sidebar that is 25% wide. -->
+    <div class="col-3 menu">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+
+    <!-- RT: Responsive main content area (75% of width)
+         How it works: This section takes up the remaining width (75%). -->
+    <div class="col-9 main-content">
+      <h2>Introduction to Responsive Design</h2>
+      <p>Resize the browser window to see how the layout changes.</p>
+      
+      <!-- RT: Responsive image
+           How it works: The image scales down according to the container size using max-width: 100% in CSS. -->
+      <img src="swat.jpg" alt="Swat" width="460" height="345">
+    </div>
+  </div>
+
+  <!-- RT: Aside section to highlight important content.
+       How it works: This can be hidden for smaller screens via media queries. -->
+  <div class="aside">
+    <h2>Important Information</h2>
+    <p>This section is used to display important updates.</p>
+  </div>
+
+  <!-- RT: Footer remains full width across all screen sizes.
+       How it works: The footer takes 100% of the width just like the header. -->
+  <div class="footer">
+    <p>Responsive Web Design Example</p>
+  </div>
+
+</body>
+</html>

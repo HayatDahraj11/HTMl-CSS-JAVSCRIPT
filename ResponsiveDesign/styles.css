@@ -1,0 +1,135 @@
+/* RT: Universal box-sizing rule
+   How it works: Ensures that padding and borders are included within the element’s total width and height. */
+   * {
+    box-sizing: border-box;
+  }
+  
+  /* RT: Header remains 100% wide and styled consistently across devices.
+     How it works: The header spans the full width of the page, and the background color remains intact. */
+  .header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  /* RT: Grid layout system using percentages for responsive columns.
+     How it works: The column width is based on percentage values which adjust with the screen size. */
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: 1px solid #ccc;
+  }
+  
+  /* RT: Setting column widths for different screen sizes using percentages.
+     How it works: These values represent the width of each column relative to the overall container width. */
+  .col-1 { width: 8.33%; }
+  .col-2 { width: 16.66%; }
+  .col-3 { width: 25%; }
+  .col-4 { width: 33.33%; }
+  .col-5 { width: 41.66%; }
+  .col-6 { width: 50%; }
+  .col-7 { width: 58.33%; }
+  .col-8 { width: 66.66%; }
+  .col-9 { width: 75%; }
+  .col-10 { width: 83.33%; }
+  .col-11 { width: 91.66%; }
+  .col-12 { width: 100%; }
+  
+  /* RT: Making images responsive.
+     How it works: Images will never overflow their containers and will scale down with the container using max-width. */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* RT: Clearfix technique for grid rows.
+     How it works: Ensures floated elements (columns) are cleared properly so they don’t collapse or overlap. */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* RT: Aside section with its own background color.
+     How it works: Styled aside to float or stack based on screen size, hides on smaller screens using media queries. */
+  .aside {
+    background-color: #33b5e5;
+    padding: 15px;
+    color: white;
+    text-align: center;
+  }
+  
+  /* RT: Footer section is styled to span full width and remain at the bottom.
+     How it works: Footer remains responsive, occupying the full width of the viewport. */
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* RT: Media query for smaller screens (max-width: 600px).
+     How it works: All columns are set to 100% width, ensuring that content stacks vertically on small screens. */
+  @media only screen and (max-width: 600px) {
+    [class*="col-"] {
+      width: 100%;
+    }
+  
+    /* RT: Change background color on small screens.
+       How it works: The background color changes to light blue for small screens (<= 600px). */
+    body {
+      background-color: lightblue;
+    }
+  }
+  
+  /* RT: Media query for larger screens (min-width: 601px).
+     How it works: The background color changes to light green for larger screens (> 600px). */
+  @media only screen and (min-width: 601px) {
+    body {
+      background-color: lightgreen;
+    }
+  }
+  
+  /* RT: Media query for landscape orientation.
+     How it works: Changes the background color when the device is in landscape mode. */
+  @media only screen and (orientation: landscape) {
+    body {
+      background-color: lightyellow;
+    }
+  }
+  
+  /* RT: Hide the aside section on smaller screens (max-width: 600px).
+     How it works: The aside section will not be displayed on small devices like smartphones. */
+  @media only screen and (max-width: 600px) {
+    .aside {
+      display: none;
+    }
+  }
+  
+  /* RT: Changing font size using media queries.
+     How it works: The font size increases or decreases depending on the screen size. */
+  @media only screen and (min-width: 601px) {
+    .main-content {
+      font-size: 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .main-content {
+      font-size: 14px;
+    }
+  }
+  
+  /* RT: Changing background images based on screen size.
+     How it works: Different background images are applied for different screen sizes. */
+  body {
+    background-image: url('img_smallflower.jpg');
+  }
+  
+  @media only screen and (min-device-width: 400px) {
+    body {
+      background-image: url('img_flowers.jpg');
+    }
+  }
+  
