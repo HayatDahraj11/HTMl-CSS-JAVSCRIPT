@@ -1,37 +1,50 @@
-/* Universal Selector - Applies to all elements */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
-
-/* Element Selector - Selects all <h1> elements */
+/* Element Selector: Styles all h1 elements */
 h1 {
-    color: darkblue;
+    color: blue;
     text-align: center;
-    margin-top: 20px;
 }
 
-/* Class Selector - Selects all elements with the class 'group' */
+/* Class Selector: Styles elements with the class 'group' */
 .group {
-    border: 2px solid #ccc;
-    padding: 20px;
-    margin: 20px;
-    background-color: #f9f9f9;
-}
-
-/* ID Selector - Selects the element with the ID 'unique' */
-#unique {
-    color: white;
-    background-color: darkgreen;
+    border: 2px solid black;
     padding: 10px;
-    text-align: center;
     margin-bottom: 10px;
 }
 
-/* Another Class Selector - Selects all elements with the class 'highlight' */
+/* Class Selector: Highlights elements with the class 'highlight' */
 .highlight {
-    color: red;
+    background-color: yellow;
     font-weight: bold;
+}
+
+/* ID Selector: Styles the element with the ID 'unique' */
+#unique {
+    color: white;
+    background-color: green;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Descendant Selector: Styles <p> elements that are inside an article inside a section inside the container class */
+.container section article p {
+    font-style: italic;
+    color: darkred;
+}
+
+/* Adjacent Sibling Selector: Styles <p> elements immediately following <h2> */
+.adjacent-demo h2 + p {
+    background-color: lightblue;
+    padding: 5px;
+}
+
+/* Attribute Selector: Styles <a> elements that have a 'title' attribute */
+a[title] {
+    color: orange;
+    text-decoration: underline;
+}
+
+/* Attribute Selector: Styles input elements with a 'placeholder' attribute */
+input[placeholder] {
+    border: 2px dashed gray;
+    padding: 5px;
 }
