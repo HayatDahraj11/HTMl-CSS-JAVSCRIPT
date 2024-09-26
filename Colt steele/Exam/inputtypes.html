@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive Input Form</title>
+</head>
+<body>
+    <h1>Comprehensive Input Form</h1>
+    <form>
+        <!-- Text Input -->
+        <p>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+        </p>
+
+        <!-- Password Input -->
+        <p>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password">
+        </p>
+
+        <!-- Email Input -->
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@mail.com">
+        </p>
+
+        <!-- Number Input -->
+        <p>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="1" max="100" value="25">
+        </p>
+
+        <!-- Date Input -->
+        <p>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+        </p>
+
+        <!-- Time Input -->
+        <p>
+            <label for="appt">Preferred Appointment Time:</label>
+            <input type="time" id="appt" name="appt">
+        </p>
+
+        <!-- Color Picker -->
+        <p>
+            <label for="favcolor">Favorite Color:</label>
+            <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+        </p>
+
+        <!-- Range Input -->
+        <p>
+            <label for="volume">Volume Control:</label>
+            <input type="range" id="volume" name="volume" min="0" max="100" value="50">
+        </p>
+
+        <!-- Checkbox Input -->
+        <p>
+            <label>
+                <input type="checkbox" name="subscribe" value="newsletter"> Subscribe to Newsletter
+            </label>
+        </p>
+
+        <!-- Radio Button -->
+        <p>Gender:</p>
+        <p>
+            <label>
+                <input type="radio" name="gender" value="male"> Male
+            </label>
+            <label>
+                <input type="radio" name="gender" value="female"> Female
+            </label>
+        </p>
+
+        <!-- File Input -->
+        <p>
+            <label for="myfile">Upload a file:</label>
+            <input type="file" id="myfile" name="myfile">
+        </p>
+
+        <!-- URL Input -->
+        <p>
+            <label for="website">Website:</label>
+            <input type="url" id="website" name="website" placeholder="https://example.com">
+        </p>
+
+        <!-- Search Input -->
+        <p>
+            <label for="search">Search:</label>
+            <input type="search" id="search" name="search" placeholder="Search...">
+        </p>
+
+        <!-- Telephone Input -->
+        <p>
+            <label for="tel">Phone Number:</label>
+            <input type="tel" id="tel" name="tel" placeholder="+1234567890">
+        </p>
+
+        <!-- Hidden Input -->
+        <input type="hidden" name="user_id" value="12345">
+
+        <!-- Submit Button -->
+        <p>
+            <input type="submit" value="Submit">
+        </p>
+
+        <!-- Reset Button -->
+        <p>
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+</body>
+</html>
