@@ -1,0 +1,17 @@
+/* WHY: Margins, padding, and borders define spacing and boundary between elements. 
+   WHAT: Each has a different role: margin for external space, padding for internal space, and border for the boundary. 
+   HOW: See the CSS below to visualize this concept. */
+
+   .box {
+    margin: 20px; /* Margin creates space outside the border */
+    padding: 15px; /* Padding creates space between the content and border */
+    border: 2px solid black; /* Border defines the boundary around the content */
+    height: 100px; /* Controls the height of the content box */
+    width: 300px; /* Controls the width of the content box */
+    background-color: lightgray;
+}
+
+/* Until you change the width, the text box will extend the full width of the page */
+.box::after {
+    content: " Without width control, this box extends to the end of the page.";
+}

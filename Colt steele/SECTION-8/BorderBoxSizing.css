@@ -1,0 +1,19 @@
+/* WHY: Box-sizing allows you to control how total dimensions (width/height) are calculated.
+   WHAT: Border width, color, and style define the appearance of the border. Box-sizing adjusts the total box dimensions.
+   HOW: Example below demonstrates box-sizing and the other properties. */
+
+/* Demonstrating border width, color, and style */
+.box-sizing-example {
+    width: 300px;
+    padding: 20px; /* Padding is the space between the border and the content */
+    border: 5px solid red; /* Border width, color, and style */
+    box-sizing: border-box; /* Ensures the padding and border are included within the width */
+    background-color: lightyellow;
+}
+
+/* WHY: Padding creates space inside the box between the content and the border.
+   WHAT: Margin creates space outside the box between it and other content. */
+.box-sizing-example {
+    margin: 30px; /* Margin is the space outside the border */
+    padding: 10px; /* Padding is the space between the content and border */
+}
