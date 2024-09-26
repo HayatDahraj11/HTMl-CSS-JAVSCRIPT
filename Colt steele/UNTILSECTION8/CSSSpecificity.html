@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity Example</title>
+    <link rel="stylesheet" href="CSSSpecificity.css">
+</head>
+<body>
+    <!-- Inline style overrides all others -->
+    <p style="color: red;">This is a paragraph with inline style (should be red).</p>
+
+    <!-- ID selector overrides class and element selectors -->
+    <p id="unique-paragraph" class="special-paragraph">This paragraph uses ID and class selectors (should be orange).</p>
+
+    <!-- Class selector overrides element selector -->
+    <p class="special-paragraph">This paragraph uses the class selector (should be green).</p>
+</body>
+</html>

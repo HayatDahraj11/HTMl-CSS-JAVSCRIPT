@@ -1,0 +1,19 @@
+/* Parent container with a specific font color and background */
+.container {
+    color: blue;
+    background-color: lightgrey;
+    padding: 20px;
+}
+
+/* Child element with inherited properties */
+.child {
+    color: inherit; /* Inherits the font color from the parent */
+    background-color: inherit; /* Inherits the background color from the parent */
+    border: 2px solid red; /* Adds a red border */
+    padding: 10px;
+}
+
+/* Another child element overriding the parent's styles */
+.child-override {
+    color: green; /* Overrides inherited font color */
+}

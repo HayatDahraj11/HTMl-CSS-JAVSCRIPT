@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic HTML Example</title>
+    <style>
+        /* Basic styling for demonstration purposes */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+        .header, .footer, .section, .article, .aside, .nav {
+            margin-bottom: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Container for the header and navigation -->
+    <div class="container header">
+        <!-- Header: Contains introductory content or navigational links -->
+        <header>
+            <h1>My Website</h1>
+            <div class="nav">
+                <nav>
+                    <!-- Navigation block: Provides links to different sections of the website -->
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <!-- Main content section -->
+    <div class="container section">
+        <!-- Main content section: Defines a section of content -->
+        <section id="home">
+            <h2>Welcome to My Website</h2>
+            <p>This is the main section of the homepage, introducing visitors to the website.</p>
+        </section>
+
+        <!-- Another section of content -->
+        <section id="services">
+            <h2>Our Services</h2>
+            <p>Details about the services we offer.</p>
+        </section>
+    </div>
+
+    <!-- Container for article and aside -->
+    <div class="container">
+        <!-- Article: Represents a self-contained piece of content -->
+        <article>
+            <h2>Latest News</h2>
+            <p>This article contains the latest updates and news about our company.</p>
+        </article>
+
+        <!-- Aside: Represents content tangentially related to the main content -->
+        <aside>
+            <h2>Related Information</h2>
+            <p>This sidebar provides additional context and links related to the main content.</p>
+        </aside>
+    </div>
+
+    <!-- Container for the footer -->
+    <div class="container footer">
+        <!-- Footer: Contains footer content for the page -->
+        <footer>
+            <p>&copy; 2024 My Website. All rights reserved.</p>
+            <p>Contact us at <a href="mailto:info@mywebsite.com">info@mywebsite.com</a></p>
+        </footer>
+    </div>
+
+</body>
+</html>

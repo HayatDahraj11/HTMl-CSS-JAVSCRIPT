@@ -1,0 +1,57 @@
+/* Pseudo-Class: Hover */
+/* Why this is used: To add interactivity when a user hovers over an element. */
+/* What this will do: Changes the button background color when hovered over. */
+.hover-button:hover {
+    background-color: lightgreen;
+    cursor: pointer;
+}
+
+/* Pseudo-Class: Active */
+/* Why this is used: To style an element when it's in the process of being clicked or pressed. */
+/* What this will do: Changes the button's background color when clicked. */
+.active-button:active {
+    background-color: red;
+}
+
+/* Pseudo-Class: Checked */
+/* Why this is used: To target checkboxes or radio buttons that have been checked. */
+/* What this will do: Changes the label's text color when the checkbox is checked. */
+input[type="checkbox"]:checked + label {
+    color: blue;
+    font-weight: bold;
+}
+
+/* Pseudo-Class: Nth-Child */
+/* Why this is used: To style specific elements based on their order. */
+/* What this will do: Styles every other post in the list of posts. */
+.post-list p:nth-child(odd) {
+    background-color: lightgray;
+}
+
+/* Why this is used: To alternate the background for even posts. */
+/* What this will do: Styles even posts differently from odd posts. */
+.post-list p:nth-child(even) {
+    background-color: lightblue;
+}
+
+/* Pseudo-Class: Focus */
+/* Why this is used: To style form inputs when the user focuses on them. */
+/* What this will do: Changes the input border color when focused on. */
+input:focus {
+    border: 2px solid green;
+    outline: none;
+}
+
+/* Pseudo-Class: Disabled */
+/* Why this is used: To style buttons or inputs that are disabled. */
+/* What this will do: Changes the appearance of the disabled button. */
+button:disabled {
+    background-color: gray;
+    color: white;
+    cursor: not-allowed;
+}
+
+
+/* Pseudo-Class other use cases  */
+/* when even number posts are wanted in other color */
+/*  */

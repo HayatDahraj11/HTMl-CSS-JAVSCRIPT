@@ -1,0 +1,14 @@
+/* Element Selector */
+p {
+    color: blue;
+}
+
+/* Class Selector */
+.special-paragraph {
+    color: green;
+}
+
+/* ID Selector */
+#unique-paragraph {
+    color: orange;
+}

@@ -1,0 +1,10 @@
+/* Styling the first word of each paragraph using the ::first-letter pseudo-element */
+p::first-letter {
+    font-weight: bold;
+    color: blue;
+  }
+  
+  p:hover::first-letter {
+    color: red;
+  }
+  
